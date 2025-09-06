@@ -1,0 +1,29 @@
+{
+  "city": "Åsane",
+  "offers": [
+    {
+      "merchant": "Kiwi",
+      "product": "Bleier",
+      "unit": "pakke",
+      "price": 69.90,
+      "validTo": "2025-03-31",
+      "deepLink": "#"
+    },
+    {
+      "merchant": "Rema 1000",
+      "product": "Bleier",
+      "unit": "pakke", 
+      "price": 72.00,
+      "validTo": "2025-03-31",
+      "deepLink": "#"
+    },
+    {
+      "merchant": "Coop Extra",
+      "product": "Bleier",
+      "unit": "pakke",
+      "price": 74.50,
+      "validTo": "2025-03-31",
+      "deepLink": "#"
+    }
+  ]
+}

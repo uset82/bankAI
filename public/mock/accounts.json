@@ -1,0 +1,30 @@
+{
+  "accounts": [
+    {
+      "id": "chk-1",
+      "name": "Everyday",
+      "iban": "NO93 8601 1117 947",
+      "currency": "NOK",
+      "balance": 18250.25
+    },
+    {
+      "id": "sav-1",
+      "name": "Savings", 
+      "iban": "NO17 9835 1234 567",
+      "currency": "NOK",
+      "balance": 50200.00
+    }
+  ],
+  "transactions": [
+    { "id": "t1",  "accountId": "chk-1", "amount": 32000.00, "desc": "Salary",           "date": "2025-03-01" },
+    { "id": "t2",  "accountId": "chk-1", "amount": -1560.00,  "desc": "Groceries – Rema", "date": "2025-03-03" },
+    { "id": "t3",  "accountId": "chk-1", "amount": -840.00,   "desc": "Groceries – Kiwi", "date": "2025-03-07" },
+    { "id": "t4",  "accountId": "chk-1", "amount": -1200.00,  "desc": "Clothes – H&M",    "date": "2025-03-09" },
+    { "id": "t5",  "accountId": "chk-1", "amount": -4200.00,  "desc": "Travel – Oslo",    "date": "2025-03-12" },
+    { "id": "t6",  "accountId": "chk-1", "amount": -980.00,   "desc": "Groceries – Coop", "date": "2025-03-15" },
+    { "id": "t7",  "accountId": "chk-1", "amount": -600.00,   "desc": "Clothes – Zara",  "date": "2025-03-18" },
+    { "id": "t8",  "accountId": "chk-1", "amount": -1500.00,  "desc": "Travel – Bergen",  "date": "2025-03-21" },
+    { "id": "t9",  "accountId": "chk-1", "amount": -620.00,   "desc": "Groceries – Extra","date": "2025-03-24" },
+    { "id": "t10", "accountId": "sav-1", "amount": 500.00,    "desc": "Auto-save",        "date": "2025-03-25" }
+  ]
+}

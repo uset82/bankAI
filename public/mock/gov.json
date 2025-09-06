@@ -1,0 +1,18 @@
+{
+  "messages": [
+    {
+      "id": "g1",
+      "source": "NAV",
+      "subject": "Dokumentinnsending – mangler vedlegg",
+      "receivedAt": "2025-03-10",
+      "status": "Åpen"
+    },
+    {
+      "id": "g2",
+      "source": "Skatteetaten",
+      "subject": "MVA – påminnelse om innsending",
+      "receivedAt": "2025-03-05",
+      "status": "Åpen"
+    }
+  ]
+}

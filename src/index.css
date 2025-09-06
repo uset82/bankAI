@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dark theme by default for AI Bank */
+    --background: 220 13% 7%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 13% 9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 13% 9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 83% 53%;
+    --primary-foreground: 220 13% 7%;
+
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 13% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 220 13% 15%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 15%;
+    --input: 220 13% 15%;
+    --ring: 210 83% 53%;
+
+    --radius: 1rem;
+
+    /* AI Bank Design System */
+    --bank-gradient-start: 220 83% 15%;
+    --bank-gradient-middle: 210 83% 25%;
+    --bank-gradient-end: 15 78% 65%;
+    
+    --glass-bg: 220 13% 15%;
+    --glass-border: 220 20% 25%;
+    --glass-shadow: 220 83% 15%;
+    
+    --success: 120 83% 45%;
+    --warning: 38 92% 50%;
+    --info: 210 83% 53%;
+    
+    --demo-banner: 15 78% 25%;
+    --demo-accent: 15 78% 45%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Liquid Glass palette for iOS 26 look */
+    --lgx1: 217 75% 7%;    /* abyss */
+    --lgx2: 215 82% 12%;   /* deep navy */
+    --lgx3: 213 82% 18%;   /* ocean */
+    --lgx4: 200 88% 58%;   /* cyan glow */
+    --lgpink: 310 90% 66%; /* accent pink */
+    --lglime: 145 75% 52%; /* accent lime */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* iOS26 Liquid background */
+  .app-liquid-bg {
+    position: relative;
+    min-height: 100vh;
+    background:
+      radial-gradient(1200px 600px at 100% -10%, hsl(var(--lgx4)/0.25), transparent 60%),
+      radial-gradient(900px 500px at -10% 0%, hsl(var(--lgpink)/0.18), transparent 60%),
+      radial-gradient(800px 400px at 110% 60%, hsl(var(--lglime)/0.15), transparent 60%),
+      linear-gradient(180deg, hsl(var(--lgx2)), hsl(var(--lgx1)) 35%, hsl(var(--lgx3)) 100%);
+    overflow: hidden;
+    isolation: isolate;
+  }
+
+  .app-liquid-bg::before {
+    content: "";
+    position: absolute;
+    inset: -10% -10% -20% -10%;
+    background:
+      radial-gradient(600px 300px at 10% 20%, hsl(var(--lgx4)/0.08), transparent 70%),
+      radial-gradient(500px 250px at 90% 80%, hsl(var(--lgpink)/0.06), transparent 70%);
+    filter: blur(60px);
+    z-index: -1;
+  }
+
+  .glass-card {
+    @apply bg-glass-bg/20 backdrop-blur-2xl border border-glass-border/30 shadow-2xl shadow-glass-shadow/30;
+    position: relative;
+  }
+
+  /* Subtle glass noise */
+  .glass-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/fi lter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.02'/%3E%3C/svg%3E");
+    pointer-events: none;
+    border-radius: inherit;
+  }
+
+  /* Interactive sheen for buttons/cards */
+  .sheen {
+    position: relative;
+    overflow: hidden;
+  }
+  .sheen::before {
+    content: "";
+    position: absolute;
+    inset: -150% -50% auto -50%;
+    height: 300%;
+    background: linear-gradient(60deg, transparent 0%, hsl(var(--foreground)/0.06) 50%, transparent 100%);
+    transform: translateX(-100%) rotate(8deg);
+    transition: transform 600ms ease;
+  }
+  .sheen:hover::before {
+    transform: translateX(120%) rotate(8deg);
+  }
+  
+  .bank-gradient {
+    background: linear-gradient(135deg, 
+      hsl(var(--bank-gradient-start)), 
+      hsl(var(--bank-gradient-middle)), 
+      hsl(var(--bank-gradient-end))
+    );
+  }
+  
+  .demo-banner {
+    @apply bg-demo-banner/90 backdrop-blur-sm border-demo-accent/30;
+  }
+  
+  .voice-recording {
+    @apply animate-pulse bg-destructive/20 border-destructive/50;
+  }
+  
+  .action-card {
+    @apply glass-card rounded-2xl p-6 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-primary/20;
+  }
+}

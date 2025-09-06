@@ -1,0 +1,137 @@
+{
+  "currency": "NOK",
+  "account": {
+    "id": "chk-1",
+    "name": "Everyday",
+    "iban": "NO93 8601 1117 947"
+  },
+  "months": [
+    {
+      "month": "2025-01",
+      "opening_balance": 15000.00,
+      "closing_balance": 30150.00,
+      "totals": {
+        "income": 32000.00,
+        "expenses": 16850.00,
+        "by_category": {
+          "Groceries": 3500.00,
+          "Clothes": 1400.00,
+          "Travel": 4200.00,
+          "Rent": 7000.00,
+          "Dining": 450.00,
+          "Transport": 300.00
+        }
+      },
+      "transactions": [
+        { "date": "2025-01-01", "description": "Salary",              "category": "Income",    "in": 32000.00, "out": 0,       "balance": 47000.00 },
+        { "date": "2025-01-02", "description": "Rent",                "category": "Rent",      "in": 0,        "out": 7000.00, "balance": 40000.00 },
+        { "date": "2025-01-04", "description": "Groceries – Rema",    "category": "Groceries", "in": 0,        "out": 1200.00, "balance": 38800.00 },
+        { "date": "2025-01-09", "description": "Groceries – Kiwi",    "category": "Groceries", "in": 0,        "out": 1100.00, "balance": 37700.00 },
+        { "date": "2025-01-12", "description": "Travel – Train",      "category": "Travel",    "in": 0,        "out": 1800.00, "balance": 35900.00 },
+        { "date": "2025-01-15", "description": "Clothes – H&M",       "category": "Clothes",   "in": 0,        "out": 900.00,  "balance": 35000.00 },
+        { "date": "2025-01-20", "description": "Dining – Café",        "category": "Dining",    "in": 0,        "out": 450.00,  "balance": 34550.00 },
+        { "date": "2025-01-25", "description": "Groceries – Coop",    "category": "Groceries", "in": 0,        "out": 1200.00, "balance": 33350.00 },
+        { "date": "2025-01-28", "description": "Transport – Ruter",   "category": "Transport", "in": 0,        "out": 300.00,  "balance": 33050.00 },
+        { "date": "2025-01-31", "description": "Travel – Hotel",      "category": "Travel",    "in": 0,        "out": 2400.00, "balance": 30650.00 }
+      ]
+    },
+    {
+      "month": "2025-02",
+      "opening_balance": 30150.00,
+      "closing_balance": 28620.00,
+      "totals": {
+        "income": 32000.00,
+        "expenses": 33530.00,
+        "by_category": {
+          "Groceries": 3720.00,
+          "Clothes": 800.00,
+          "Travel": 5200.00,
+          "Rent": 7000.00,
+          "Dining": 560.00,
+          "Transport": 350.00,
+          "Utilities": 3100.00,
+          "Other": 16800.00
+        }
+      },
+      "transactions": [
+        { "date": "2025-02-01", "description": "Salary",               "category": "Income",    "in": 32000.00, "out": 0,       "balance": 62150.00 },
+        { "date": "2025-02-02", "description": "Rent",                 "category": "Rent",      "in": 0,        "out": 7000.00, "balance": 55150.00 },
+        { "date": "2025-02-05", "description": "Utilities – Power",    "category": "Utilities", "in": 0,        "out": 1800.00, "balance": 53350.00 },
+        { "date": "2025-02-08", "description": "Groceries – Rema",     "category": "Groceries", "in": 0,        "out": 1280.00, "balance": 52070.00 },
+        { "date": "2025-02-12", "description": "Clothes – Zara",       "category": "Clothes",   "in": 0,        "out": 800.00,  "balance": 51270.00 },
+        { "date": "2025-02-16", "description": "Dining – Pizza",       "category": "Dining",    "in": 0,        "out": 260.00,  "balance": 51010.00 },
+        { "date": "2025-02-17", "description": "Groceries – Kiwi",     "category": "Groceries", "in": 0,        "out": 1240.00, "balance": 49770.00 },
+        { "date": "2025-02-20", "description": "Transport – Flytoget", "category": "Transport", "in": 0,        "out": 350.00,  "balance": 49420.00 },
+        { "date": "2025-02-22", "description": "Travel – Flight",      "category": "Travel",    "in": 0,        "out": 3400.00, "balance": 46020.00 },
+        { "date": "2025-02-26", "description": "Utilities – Internet", "category": "Utilities", "in": 0,        "out": 1300.00, "balance": 44720.00 },
+        { "date": "2025-02-27", "description": "Groceries – Coop",     "category": "Groceries", "in": 0,        "out": 1200.00, "balance": 43520.00 },
+        { "date": "2025-02-28", "description": "Other – Annual fees",  "category": "Other",     "in": 0,        "out": 16800.00,"balance": 26720.00 }
+      ]
+    },
+    {
+      "month": "2025-03",
+      "opening_balance": 28620.00,
+      "closing_balance": 36520.25,
+      "totals": {
+        "income": 32000.00,
+        "expenses": 24100.75,
+        "by_category": {
+          "Groceries": 2660.00,
+          "Clothes": 600.00,
+          "Travel": 5700.00,
+          "Rent": 7000.00,
+          "Dining": 440.75,
+          "Transport": 300.00,
+          "Auto-save": 500.00
+        }
+      },
+      "transactions": [
+        { "date": "2025-03-01", "description": "Salary",              "category": "Income",    "in": 32000.00, "out": 0,       "balance": 60620.00 },
+        { "date": "2025-03-02", "description": "Rent",                "category": "Rent",      "in": 0,        "out": 7000.00, "balance": 53620.00 },
+        { "date": "2025-03-03", "description": "Groceries – Rema",    "category": "Groceries", "in": 0,        "out": 1560.00, "balance": 52060.00 },
+        { "date": "2025-03-07", "description": "Groceries – Kiwi",    "category": "Groceries", "in": 0,        "out": 840.00,  "balance": 51220.00 },
+        { "date": "2025-03-09", "description": "Clothes – H&M",       "category": "Clothes",   "in": 0,        "out": 1200.00, "balance": 50020.00 },
+        { "date": "2025-03-12", "description": "Travel – Oslo",       "category": "Travel",    "in": 0,        "out": 4200.00, "balance": 45820.00 },
+        { "date": "2025-03-15", "description": "Groceries – Coop",    "category": "Groceries", "in": 0,        "out": 980.00,  "balance": 44840.00 },
+        { "date": "2025-03-18", "description": "Dining – Café",        "category": "Dining",    "in": 0,        "out": 220.75,  "balance": 44619.25 },
+        { "date": "2025-03-21", "description": "Travel – Bergen",     "category": "Travel",    "in": 0,        "out": 1500.00, "balance": 43119.25 },
+        { "date": "2025-03-25", "description": "Auto-save to Savings", "category": "Auto-save", "in": 0,        "out": 500.00,  "balance": 42619.25 }
+      ]
+    },
+    {
+      "month": "2025-04",
+      "opening_balance": 36520.25,
+      "closing_balance": 43110.25,
+      "totals": {
+        "income": 32000.00,
+        "expenses": 25410.00,
+        "by_category": {
+          "Groceries": 3100.00,
+          "Clothes": 700.00,
+          "Travel": 5800.00,
+          "Rent": 7000.00,
+          "Dining": 560.00,
+          "Transport": 350.00,
+          "Utilities": 3900.00,
+          "Auto-save": 1000.00
+        }
+      },
+      "transactions": [
+        { "date": "2025-04-01", "description": "Salary",               "category": "Income",    "in": 32000.00, "out": 0,       "balance": 68520.25 },
+        { "date": "2025-04-02", "description": "Rent",                 "category": "Rent",      "in": 0,        "out": 7000.00, "balance": 61520.25 },
+        { "date": "2025-04-04", "description": "Utilities – Power",    "category": "Utilities", "in": 0,        "out": 2100.00, "balance": 59420.25 },
+        { "date": "2025-04-07", "description": "Groceries – Rema",     "category": "Groceries", "in": 0,        "out": 1350.00, "balance": 58070.25 },
+        { "date": "2025-04-10", "description": "Clothes – Zara",       "category": "Clothes",   "in": 0,        "out": 700.00,  "balance": 57370.25 },
+        { "date": "2025-04-14", "description": "Dining – Sushi",       "category": "Dining",    "in": 0,        "out": 320.00,  "balance": 57050.25 },
+        { "date": "2025-04-16", "description": "Transport – Ruter",    "category": "Transport", "in": 0,        "out": 350.00,  "balance": 56700.25 },
+        { "date": "2025-04-18", "description": "Groceries – Kiwi",     "category": "Groceries", "in": 0,        "out": 1200.00, "balance": 55500.25 },
+        { "date": "2025-04-22", "description": "Travel – Flight",      "category": "Travel",    "in": 0,        "out": 5800.00, "balance": 49700.25 },
+        { "date": "2025-04-25", "description": "Utilities – Internet", "category": "Utilities", "in": 0,        "out": 1800.00, "balance": 47900.25 },
+        { "date": "2025-04-28", "description": "Groceries – Coop",     "category": "Groceries", "in": 0,        "out": 550.00,  "balance": 47350.25 },
+        { "date": "2025-04-29", "description": "Auto-save to Savings", "category": "Auto-save", "in": 0,        "out": 1000.00, "balance": 46350.25 }
+      ]
+    }
+  ]
+}
+
+

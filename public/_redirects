@@ -1,0 +1,3 @@
+/api/* /.netlify/functions/:splat 200
+/realtime /.netlify/functions/realtime-client-secret 200
+/* /index.html 200
