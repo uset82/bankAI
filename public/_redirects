@@ -1,8 +1,8 @@
+# Realtime client secret endpoint (specific before wildcard)
+/api/realtime/client_secret /.netlify/functions/realtime-client-secret 200
+
 # API to Netlify Functions (route through single "api" function)
 /api/* /.netlify/functions/api/:splat 200
-
-# Realtime client secret endpoint
-/api/realtime/client_secret /.netlify/functions/realtime-client-secret 200
 
 # SPA fallback
 /* /index.html 200
