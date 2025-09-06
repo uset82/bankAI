@@ -1,8 +1,14 @@
 import type { Handler } from "@netlify/functions";
 
 export const handler: Handler = async (event) => {
-  const path = event.path.replace(/^\/\.netlify\/functions\//, "");
-  if (path === 'api/openai-chat' && event.httpMethod === 'POST') {
+  const rawPath = event.path || "";
+  // Strip Netlify functions prefix if present
+  const stripped = rawPath.replace(/^\/\.netlify\/functions\//, "");
+  // Normalize to endpoint name: e.g., 'api/openai-chat' -> 'openai-chat'
+  const pathOnly = stripped.replace(/^api\/?/, "").replace(/^\//, "");
+  const method = event.httpMethod || 'GET';
+
+  if (pathOnly === 'openai-chat' && method === 'POST') {
     const apiKey = process.env.OPENAI_API_KEY;
     const body = JSON.parse(event.body || '{}');
     const model = body?.model || process.env.OPENAI_CHAT_MODEL || 'gpt-5-mini-2025-08-07';
@@ -21,7 +27,7 @@ export const handler: Handler = async (event) => {
     }
   }
 
-  if (path === 'api/tts' && event.httpMethod === 'POST') {
+  if (pathOnly === 'tts' && method === 'POST') {
     const apiKey = process.env.OPENAI_API_KEY;
     const body = JSON.parse(event.body || '{}');
     const { text, voice = 'alloy', model = 'tts-1', format = 'mp3' } = body;
@@ -40,7 +46,7 @@ export const handler: Handler = async (event) => {
     }
   }
 
-  if (path === 'api/transcribe' && event.httpMethod === 'POST') {
+  if (pathOnly === 'transcribe' && method === 'POST') {
     return { statusCode: 501, body: JSON.stringify({ error: 'Transcription not enabled in Netlify function' }) };
   }
 
