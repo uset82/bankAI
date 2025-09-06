@@ -6,15 +6,15 @@
   directory = "netlify/functions"
 
 [[redirects]]
+  from = "/api/realtime/client_secret"
+  to = "/.netlify/functions/realtime-client-secret"
+  status = 200
+
+[[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/api/:splat"
   status = 200
   force = true
-
-[[redirects]]
-  from = "/api/realtime/client_secret"
-  to = "/.netlify/functions/realtime-client-secret"
-  status = 200
 
 [[redirects]]
   from = "/*"
